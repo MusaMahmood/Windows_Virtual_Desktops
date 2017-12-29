@@ -244,8 +244,8 @@ static void virgo_toggle_hotkeys(Virgo *v)
 	v->handle_hotkeys = !v->handle_hotkeys;
 	if (v->handle_hotkeys) {
 		for (i=0; i<NUM_DESKTOPS; i++) {
-			register_hotkey(i*2, MOD_ALT|MOD_NOREPEAT, i+1+'0');
-			register_hotkey(i*2+1, MOD_CONTROL|MOD_NOREPEAT, i+1+'0');
+			register_hotkey(i*2, MOD_CONTROL|MOD_NOREPEAT, i+1+'0');
+			register_hotkey(i*2+1, MOD_ALT|MOD_NOREPEAT, i+1+'0');
 		}
 	} else {
 		for (i=0; i<NUM_DESKTOPS; i++) {
@@ -260,8 +260,8 @@ static void virgo_init(Virgo *v)
 	unsigned i;
 	v->handle_hotkeys = 1;
 	for (i=0; i<NUM_DESKTOPS; i++) {
-		register_hotkey(i*2, MOD_ALT|MOD_NOREPEAT, i+1+'0');
-		register_hotkey(i*2+1, MOD_CONTROL|MOD_NOREPEAT, i+1+'0');
+		register_hotkey(i*2, MOD_CONTROL|MOD_NOREPEAT, i+1+'0');
+		register_hotkey(i*2+1, MOD_ALT|MOD_NOREPEAT, i+1+'0');
 	}
 	register_hotkey(i*2, MOD_ALT|MOD_CONTROL|MOD_SHIFT|MOD_NOREPEAT, 'Q');
 	register_hotkey(i*2+1, MOD_ALT|MOD_CONTROL|MOD_SHIFT|MOD_NOREPEAT, 'S');
