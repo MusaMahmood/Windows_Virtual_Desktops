@@ -11,7 +11,8 @@ else
 	WINDRES_ARCH=pe-i386
 endif
 NAME=virgo
-EXE=$(NAME).exe
+NAME_EXPORT = vwin
+EXE=$(NAME_EXPORT).exe
 
 .PHONY: all clean
 all: $(EXE)

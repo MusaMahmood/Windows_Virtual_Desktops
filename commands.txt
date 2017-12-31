@@ -1,0 +1,7 @@
+cd /F/_dev/Windows_Virtual_Desktops/
+
+make
+
+move output to C:\VWIN-32\
+
+shortcut on desktop.
